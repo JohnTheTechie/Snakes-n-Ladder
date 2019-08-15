@@ -1,3 +1,4 @@
+from Elements.player import Player
 
 class Cell:
     """
@@ -38,6 +39,6 @@ class Cell:
         if should_reduce_move:
             player.reduce_remaining_moves()
         if player.get_remaining_moves() == 0:
-            player.occupying_cell = to_cell
+            player.set_occupying_cell(to_cell)
         to_cell.move_in_player(player)
         self.occupant_player_list.remove(player)

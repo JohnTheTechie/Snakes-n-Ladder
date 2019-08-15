@@ -22,6 +22,6 @@ class Board:
         return cls.__board
 
     def insert_player_to_the_first_cell(self, player):
-        player.occupying_cell = self.first_cell
+        player.set_occupying_cell(self.first_cell)
         player.reduce_remaining_moves()
         self.first_cell.move_in_player(player)

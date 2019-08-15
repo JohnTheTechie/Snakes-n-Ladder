@@ -6,7 +6,7 @@ class Player:
 
     def __init__(self, id=0):
         self.index = id
-        self.occupying_cell = None
+        self.__occupying_cell = None
         self.__remaining_movements = 0
         self.board = Board()
 
@@ -21,7 +21,10 @@ class Player:
 
     def set_remaining_moves(self, moves):
         self.__remaining_movements = moves
-        if self.__remaining_movements == 1 and self.occupying_cell is None:
+        if self.__remaining_movements == 1 and self.__occupying_cell is None:
             Board.insert_player_to_the_first_cell()
-        elif self.__remaining_movements > 0 and self.occupying_cell is not None:
-            self.occupying_cell.move_out_player(self)
+        elif self.__remaining_movements > 0 and self.__occupying_cell is not None:
+            self.__occupying_cell.move_out_player(self)
+
+    def set_occupying_cell(self, cell):
+        self.__occupying_cell = cell
