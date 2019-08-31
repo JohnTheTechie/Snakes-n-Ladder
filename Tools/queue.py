@@ -52,7 +52,7 @@ class Queue:
             self.__q.remove(temp)
             return temp
 
-    def dequeue_from_end(self):
+    def dequeue_from_tail(self):
         """
         pull out the item from the end of the queue
         :return: size of the queue
