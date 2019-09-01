@@ -11,4 +11,3 @@ class BoardCircuit:
         """
         self.cell_count = 100
         self.isCircuit = False
-        self.
