@@ -24,6 +24,7 @@ class Board:
     def get_player(self):
         return self.current_player
 
-    def play(self):
+    def play_player(self):
         moves = self.dice.roll()
         self.current_player.set_remaining_moves(moves)
+        self.circuit.process_player(self.current_player)

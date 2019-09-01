@@ -41,6 +41,12 @@ class CellCircuit:
     def __init__(self):
         self.player_dict = {}
 
+    def process_player(self, player: Player):
+        if player.occupying_cell is None:
+            self.push_in_player_to_the_board(player)
+        else:
+            self.move_player_on_the_board(player)
+
     def push_in_player_to_the_board(self, player: Player):
         """
         function should be called when entry criteria achieved for pushing the player
@@ -68,6 +74,8 @@ class CellCircuit:
         if self.player_dict[player] in self.CHAIN.keys():
             self.player_dict[player] = self.CHAIN[self.player_dict[player]]
             player.occupying_cell = self.player_dict[player]
+        if player.occupying_cell >= self.CELL_LAST_CELL:
+            pass
 
     def get_board_status(self):
         return self.player_dict
