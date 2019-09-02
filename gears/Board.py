@@ -1,6 +1,7 @@
 
 import gears.elements
 from gears.playerQueue import PlayerQueue
+import logging as log
 
 
 class Board:
@@ -26,5 +27,8 @@ class Board:
 
     def play_player(self):
         moves = self.dice.roll()
+        log.debug(f"rolled count {moves}")
         self.current_player.set_remaining_moves(moves)
         self.circuit.process_player(self.current_player)
+        self.current_player = self.queue_player.get_next_player()
+
