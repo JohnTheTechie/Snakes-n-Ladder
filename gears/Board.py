@@ -13,7 +13,7 @@ class Board:
     def __init__(self, player_count: int = 2):
         self.count_player = player_count
         self.queue_player = PlayerQueue(player_count)
-        for index in range(2):
+        for index in range(player_count):
             self.queue_player.create_player()
         self.circuit = gears.elements.CellCircuit()
         self.current_player = self.queue_player.get_next_player()

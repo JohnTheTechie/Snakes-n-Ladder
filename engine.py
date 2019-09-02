@@ -14,18 +14,18 @@ mark = {}
 def print_board_status(status: dict):
     global iteration
     global mark
-    print(f"###############status{iteration}###############")
+    log.debug(f"###############status{iteration}###############")
     for key in status.keys():
         if key not in mark.keys():
-            mark[key]=[]
+            mark[key] = []
         mark[key].append(status[key])
-        print(f"{key}   : {status[key]}")
-    print(f"######################################")
+        log.debug(f"{key}   : {status[key]}")
+    log.debug(f"######################################")
     iteration = iteration + 1
 
 
 log.basicConfig(filename='example.log', level=log.DEBUG)
-board = gears.Board.Board(2)
+board = gears.Board.Board(1)
 while not CellCircuit.FLAG_VICTORY:
     log.warning(f"victory reached: {CellCircuit.FLAG_VICTORY}")
     board.play_player()
