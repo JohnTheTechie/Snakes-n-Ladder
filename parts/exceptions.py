@@ -10,5 +10,10 @@ class PlayerQueueUnderFlowException(Exception):
 class NullPointerException(Exception):
     pass
 
+
 class PlayerQueueOverflowException(Exception):
+    pass
+
+
+class IllegalStateException(Exception):
     pass
