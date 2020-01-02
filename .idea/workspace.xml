@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebb3dcab-2d3f-40db-b095-44c67fd6bc51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Tools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/stack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tools/test_queue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gears/Board.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gears/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gears/elements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gears/playerQueue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategies.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="474" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1577977646918">
+      <screen x="51" y="27" width="1869" height="1053" />
+    </state>
+    <state x="474" y="188" width="1022" height="737" key="SettingsEditor/51.27.1869.1053/1920.0.1920.1080@51.27.1869.1053" timestamp="1577977646918" />
+  </component>
+</project>
