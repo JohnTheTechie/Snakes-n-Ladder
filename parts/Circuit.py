@@ -1,3 +1,4 @@
+from parts.accessor import Player
 
 
 class Circuit:
@@ -19,7 +20,7 @@ class Circuit:
     def set_cell_link_map(self, link_map: dict):
         self.__cellLinkMap = link_map
 
-    def player_moves(self, player_id: str, moves: int):
+    def player_moves(self, player_id: Player, moves: int):
         """
         intimation to circuit about players die throw
 
@@ -48,7 +49,7 @@ class Circuit:
         """
         self._maxPlayers = number_of_players
 
-    def _check_if_player_is_an_occupant(self, player_id: str):
+    def _check_if_player_is_an_occupant(self, player_id: Player):
         """
         check if the player is already active in the circuit
 
@@ -60,7 +61,7 @@ class Circuit:
         else:
             return False
 
-    def _update_player(self, player_id: str, position: int):
+    def _update_player(self, player_id: Player, position: int):
         """
         Updates the players location in the circuit
 
@@ -82,7 +83,7 @@ class Circuit:
         else:
             return self._listOfPlayersOccupying[player_id]
 
-    def _add_player_to_circuit(self, player_id: str):
+    def _add_player_to_circuit(self, player_id: Player):
         """
         judge if the player can be added to the circuit
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <player>
+        <count>4</count>
+    </player>
+    <dice>
+        <type>dice</type>
+        <count>2</count>
+    </dice>
+    <circuit>
+        <length>100</length>
+        <type types="linear circular ludo">linear</type>
+        <branching>
+            <link from="6" to ="36"/>
+            <link from="29" to ="75"/>
+            <link from="37" to ="82"/>
+            <link from="52" to ="98"/>
+            <link from="76" to ="92"/>
+
+            <link from="99" to ="56"/>
+            <link from="72" to ="25"/>
+            <link from="69" to ="19"/>
+            <link from="39" to ="13"/>
+            <link from="26" to ="7"/>
+        </branching>
+    </circuit>
+</root>
