@@ -20,6 +20,9 @@ class Circuit:
     def set_cell_link_map(self, link_map: dict):
         self.__cellLinkMap = link_map
 
+    def set_entry_criterion(self, entry_criterion: int):
+        self.__entryCriterion = entry_criterion
+
     def player_moves(self, player_id: Player, moves: int):
         """
         intimation to circuit about players die throw

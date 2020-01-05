@@ -1,4 +1,3 @@
-
 class Player:
 
     count = 0
@@ -15,6 +14,3 @@ class Player:
     def __del__(self):
         Player.count -= 1
         super()
-
-
-

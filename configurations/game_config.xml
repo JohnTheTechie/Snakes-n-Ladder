@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
     <player>
-        <count>4</count>
+        <count></count>
     </player>
     <dice>
         <type>dice</type>
-        <count>2</count>
+        <count>1</count>
     </dice>
     <circuit>
         <length>100</length>

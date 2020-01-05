@@ -5,7 +5,8 @@ from configurations.configreader import ConfigReader as CR
 class TestBase(unittest.TestCase):
     def setUp(self):
         self.reader: CR = CR()
-        self.reader.parse("/home/janakiraman/PycharmProjects/Snakes/configurations/test_game_config.xml")
+        # self.reader.parse("/home/janakiraman/PycharmProjects/Snakes/configurations/test_game_config.xml")
+        self.reader.parse()
 
     def tearDown(self):
         self.reader = None

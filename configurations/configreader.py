@@ -12,7 +12,7 @@ class ConfigReader:
         """
         self.soup = None
 
-    def parse(self, file):
+    def parse(self, file="../configurations/test_game_config.xml"):
         """
         open and parse the xml config file
         :param file: location of the config file
